@@ -12,21 +12,21 @@ export class Item {
 
 export class GildedRose {
   items: Array<Item>;
-  condition: [
-    {
-      itemName;
-      upgradeOrDegrade: [
-        {
-          upgradeOrDegrade: "";
-          qualityChange: number;
-        },
-      ];
-    },
-  ];
+  // condition: [
+  //   {
+  //     itemName;
+  //     upgradeOrDegrade: [
+  //       {
+  //         upgradeOrDegrade: "";
+  //         qualityChange: number;
+  //       },
+  //     ];
+  //   },
+  // ];
 
   constructor(items = [] as Array<Item>, condition) {
     this.items = items;
-    this.condition = condition;
+    // this.condition = condition;
   }
 
   private degradeOrUpgradeQuality(
